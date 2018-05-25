@@ -10,14 +10,12 @@
 ### v0.0.3 完成小程序初步功能：今日天气，未来7天天气，首次进入需要读取用户信息和地理位置。
 #
 #
+### @全国天气API 由聚合数据免费提供
 ### @效果图
 <img src="http://m.qpic.cn/psb?/V10GArct1d477r/iaYA36J1GWR60QexPF3g4cy0oJn.h70fhbFB5I5Cmjc!/b/dDMBAAAAAAAA&bo=OAQiCQAAAAADBzU!&rf=viewer_4" width="400" hegiht="280" align=center />
 <img src="http://m.qpic.cn/psb?/V10GArct1d477r/jMcsnn**O21H2NjLSAEDOEol0YrEa19VZ*ERKApQxgw!/b/dDMBAAAAAAAA&bo=OAQiCQAAAAADh7U!&rf=viewer_4" width="400" hegiht="280" align=center />
 <img src="http://m.qpic.cn/psb?/V10GArct1d477r/4mx48zN7iaInmulmkjFoJkutYNtk5X3TuP26Thi21tA!/b/dDEBAAAAAAAA&bo=OAQiCQAAAAADZ1U!&rf=viewer_4" width="400" hegiht="280" align=center />
 <img src="http://m.qpic.cn/psb?/V10GArct1d477r/*24JmX7Je2cVyJN2McGwDbl94NuxQTKVu2BiD3sInTk!/b/dFYBAAAAAAAA&bo=OAQiCQAAAAADh7U!&rf=viewer_4" width="400" hegiht="280" align=center />
 <img src="http://m.qpic.cn/psb?/V10GArct1d477r/fJfb0XW17hWrFq7WUwbd8xox0VdxcnFMxr861UUm5V0!/b/dEMBAAAAAAAA&bo=OAQiCQAAAAADh7U!&rf=viewer_4" width="400" hegiht="280" align=center />
-###
-#
-#
-### @全国天气API 由聚合数据免费提供
+
 
