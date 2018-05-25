@@ -16,3 +16,7 @@
 <img src="http://m.qpic.cn/psb?/V10GArct1d477r/4mx48zN7iaInmulmkjFoJkutYNtk5X3TuP26Thi21tA!/b/dDEBAAAAAAAA&bo=OAQiCQAAAAADZ1U!&rf=viewer_4" width="400" hegiht="280" align=center />
 <img src="http://m.qpic.cn/psb?/V10GArct1d477r/*24JmX7Je2cVyJN2McGwDbl94NuxQTKVu2BiD3sInTk!/b/dFYBAAAAAAAA&bo=OAQiCQAAAAADh7U!&rf=viewer_4" width="400" hegiht="280" align=center />
 <img src="http://m.qpic.cn/psb?/V10GArct1d477r/fJfb0XW17hWrFq7WUwbd8xox0VdxcnFMxr861UUm5V0!/b/dEMBAAAAAAAA&bo=OAQiCQAAAAADh7U!&rf=viewer_4" width="400" hegiht="280" align=center />
+#
+#
+### @全国天气API 由聚合数据免费提供
+
