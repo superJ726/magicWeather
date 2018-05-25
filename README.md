@@ -6,11 +6,11 @@
 #
 #
 ###
-###@CHANGELOG
-###v0.0.3 完成小程序初步功能：今日天气，未来7天天气，首次进入需要读取用户信息和地理位置。
+### @CHANGELOG
+### v0.0.3 完成小程序初步功能：今日天气，未来7天天气，首次进入需要读取用户信息和地理位置。
 #
 #
-###@效果图
+### @效果图
 <img src="http://m.qpic.cn/psb?/V10GArct1d477r/iaYA36J1GWR60QexPF3g4cy0oJn.h70fhbFB5I5Cmjc!/b/dDMBAAAAAAAA&bo=OAQiCQAAAAADBzU!&rf=viewer_4" width="400" hegiht="280" align=center />
 <img src="http://m.qpic.cn/psb?/V10GArct1d477r/jMcsnn**O21H2NjLSAEDOEol0YrEa19VZ*ERKApQxgw!/b/dDMBAAAAAAAA&bo=OAQiCQAAAAADh7U!&rf=viewer_4" width="400" hegiht="280" align=center />
 <img src="http://m.qpic.cn/psb?/V10GArct1d477r/4mx48zN7iaInmulmkjFoJkutYNtk5X3TuP26Thi21tA!/b/dDEBAAAAAAAA&bo=OAQiCQAAAAADZ1U!&rf=viewer_4" width="400" hegiht="280" align=center />
