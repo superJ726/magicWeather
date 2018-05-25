@@ -1,0 +1,84 @@
+<!--main.wxml-->
+<view class="section">
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker" wx:if="{{region}}">
+      当前选择：{{region[0]}} {{region[1]}} {{region[2]}}
+    </view>
+  </picker>
+  <view class="sk" wx:if="{{weatherData}}">
+    <view class="sktemp" wx:if="{{weatherData.sk.temp}}">{{weatherData.sk.temp}}°</view>
+    <view class="todayCity" wx:if="{{weatherData.today.city}}">当前城市：{{weatherData.today.city}}</view>
+    <view class="skTime" wx:if="{{weatherData.sk.temp}}">今天{{weatherData.sk.time}}更新</view>
+    <view class="todayAdvice" wx:if="{{weatherData.sk.temp}}">今日天气提示</view>
+    <view class="todayAdviceCon">{{weatherData.today.dressing_advice}}</view>
+  </view>
+  <view class="noData" wx:if="{{weatherData == ''}}">
+    查询不到该城市的信息！
+  </view>
+  <view class="today" wx:if="{{weatherData.today}}">
+    <view class="todayweatherTitle">今日天气</view>
+    <view class="todayweatherCon">{{weatherData.today.temperature}}</view>
+    <view class="todayweatherCon">
+      <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w0.png" wx:if="{{weatherData.today.weather_id.fa == '00'}}"></image>
+      <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w1.png" wx:if="{{weatherData.today.weather_id.fa == '01'}}"></image>
+      <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w2.png" wx:if="{{weatherData.today.weather_id.fa == '02'}}"></image>
+      <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w3.png" wx:if="{{weatherData.today.weather_id.fa == '03'}}"></image>
+      <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w4.png" wx:if="{{weatherData.today.weather_id.fa == '04'}}"></image>
+      <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w5.png" wx:if="{{weatherData.today.weather_id.fa == '05'}}"></image>
+      <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w6.png" wx:if="{{weatherData.today.weather_id.fa == '06'}}"></image>
+      <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w7.png" wx:if="{{weatherData.today.weather_id.fa == '07'}}"></image>
+      <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w8.png" wx:if="{{weatherData.today.weather_id.fa == '08'}}"></image>
+      {{weatherData.today.weather}}
+    </view>
+    <view class="todayweatherCon">{{weatherData.today.wind}}</view>
+  </view>
+  <view class="today" wx:if="{{weatherData.today}}">
+    <view class="todayweatherTitle">生活指数</view>
+    <view class="todayweatherCont">
+      <image src="https://h5tq.moji.com/tianqi/assets/images/script/20.png"></image>
+      <view class="textWrap">
+        <view class="brText">穿衣</view>
+        <view class="brTextTwo">{{weatherData.today.dressing_index}}</view>
+      </view>
+    </view>
+    <view class="todayweatherCont">
+      <image src="https://h5tq.moji.com/tianqi/assets/images/script/21.png"></image>
+      <view class="textWrap">
+        <view class="brText">紫外线</view>
+        <view class="brTextTwo">{{weatherData.today.uv_index}}</view>
+      </view>
+    </view>
+    <view class="todayweatherCont">
+      <image src="https://h5tq.moji.com/tianqi/assets/images/script/12.png"></image>
+      <view class="textWrap">
+        <view class="brText">舒适度</view>
+        <view class="brTextTwo" wx:if="{{weatherData.today.comfort_index}}">{{weatherData.today.comfort_index}}</view>
+        <view class="brTextTwo" wx:else>暂无数据</view>
+      </view>
+    </view>
+    <view class="todayweatherCont">
+      <image src="https://h5tq.moji.com/tianqi/assets/images/script/17.png"></image>
+      <view class="textWrap">
+        <view class="brText">洗车</view>
+        <view class="brTextTwo">{{weatherData.today.wash_index}}</view>
+      </view>
+    </view>
+    <view class="todayweatherCont">
+      <image src="https://h5tq.moji.com/tianqi/assets/images/script/28.png"></image>
+      <view class="textWrap">
+        <view class="brText">旅游</view>
+        <view class="brTextTwo">{{weatherData.today.travel_index}}</view>
+      </view>
+    </view>
+    <view class="todayweatherCont">
+      <image src="https://h5tq.moji.com/tianqi/assets/images/script/26.png"></image>
+      <view class="textWrap">
+        <view class="brText">晨练</view>
+        <view class="brTextTwo">{{weatherData.today.exercise_index}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="usermotto" wx:if="{{weatherData}}">
+      <button bindtap="goToList" plain="true" class="enterBtn"> 查看未来7天天气 </button>
+  </view>
+</view>

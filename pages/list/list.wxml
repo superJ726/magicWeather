@@ -1,0 +1,27 @@
+<!--list.wxml-->
+<!--main.wxml-->
+<view class="section">
+</view>
+<view class="todayCity" wx:if="{{cityName}}">当前城市：{{cityName}}</view>
+<view class="weaList">
+  <view class="week" wx:if="{{cityName}}">7天预报</view>
+  <view class="skTime" wx:if="{{weatherData.sk.temp}}">{{weatherData.sk.time}}更新</view>
+  <view class="flex-wrp">
+    <view class="futrueWrap" wx:for="{{weatherData.future}}">
+      <view>{{item.date}}</view>
+      <view>{{item.week}}</view>
+      <view class="weatherView">
+        <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w0.png" wx:if="{{item.weather_id.fa == '00'}}"></image>
+        <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w1.png" wx:if="{{item.weather_id.fa == '01'}}"></image>
+        <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w2.png" wx:if="{{item.weather_id.fa == '02'}}"></image>
+        <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w3.png" wx:if="{{item.weather_id.fa == '03'}}"></image>
+        <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w4.png" wx:if="{{item.weather_id.fa == '04'}}"></image>
+        <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w5.png" wx:if="{{item.weather_id.fa == '05'}}"></image>
+        <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w6.png" wx:if="{{item.weather_id.fa == '06'}}"></image>
+        <image src="https://h5tq.moji.com/tianqi/assets/images/weather/w7.png" wx:if="{{item.weather_id.fa == '07'}}"></image>
+        {{item.weather}}
+      </view>
+      <view class="weatherTemp">{{item.temperature}}</view>
+    </view>
+  </view>
+</view>
